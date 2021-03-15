@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+:root{
+  --body: #edf0f5;
+  --buttons:#e3e5ed;
+  --shadowDark: #d3d9e7;
+  --shadowLight:#fff;
+  --shadowFade:#d8dfea;
+  --icon: #cbcfdd;
+  --like:#6050db;
+  --star:#f1cb33;
+  --heart:#fb4f7e;
+}
+body{
+  background-color:var(--body);
+}
+
+.container{
+  
+  /**Center element horizontally and vertically**/
+  position:absolute;
+  width:70%;
+  left:50%;
+  margin-left:-35%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  
+}
+
+.heart-button, .like-button{
+  margin-right:4rem;
+}
+.button{
+  
+  /**Layout**/
+  padding:2em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  /**Borders**/
+  border-radius:15px;
+  background-color:var(--buttons);
+  
+  /**Shadows**/
+ box-shadow: -8px -8px 15px #fff, 8px 8px 15px var(--shadowDark);
+  
+  
+}
+
+.button:hover{
+  cursor:pointer;
+}
+.icon{
+  width:50px;
+  filter: invert(84%) sepia(13%) saturate(191%) hue-rotate(189deg) brightness(96%) contrast(95%);
+}
+
+.colored-heart{
+  filter: invert(55%) sepia(63%) saturate(4676%) hue-rotate(315deg) brightness(100%) contrast(98%);
+  
+}
+.colored-like{ 
+  filter: invert(27%) sepia(65%) saturate(1727%) hue-rotate(228deg) brightness(103%) contrast(92%);
+}
+.colored-star{
+  filter: invert(64%) sepia(82%) saturate(356%) hue-rotate(10deg) brightness(104%) contrast(103%);
+}
+.active{
+   box-shadow: inset -5px -5px 15px #fff, inset 8px 8px 15px var(--shadowDark);
+}
+
+footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size:10px;
+  color:#cacedc;
+  text-align:center;
+  width:100%;
+  position:absolute;
+  bottom:0;
+}
+
+a{
+  text-decoration:none;
+  color:#cacedc;
+  font-weight:bold;
+}
